@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>MSI-Radio</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<script src="resources/mediajs/mediaelement-and-player.min.js"></script>
+	<link rel="stylesheet" href="resources/mediajs/mediaelementplayer.min.css" />
+	<script>
+		jQuery(function($){
+			$("#btn_play").click(function(){
+				//alert("hey baby");
+				return false;
+			});
+		});
+	</script>
+</head> 
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>My Title</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+	<p>
+		Please click the play button given below to play this radio channel.
+	</p>
+	<audio id="player2" src="http://stream.wbai.org:8000/wbai_64k" type="audio/mpeg" controls="controls">
+
+    </audio>	
+
+	<a href="#" data-role="button" data-icon="star" id="btn_play">Play Channel</a>
+	</div><!-- /content -->
+<script>
+		jQuery(function($){
+			$("#btn_play").click(function(){
+				alert("hey baby");
+				return false;
+			});
+			$('audio,video').mediaelementplayer();
+		});
+	</script>
+</div><!-- /page -->
+
+</body>
+</html>

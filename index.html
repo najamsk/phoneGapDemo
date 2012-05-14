@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>MSI-Radio</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<script src="resources/mediajs/mediaelement-and-player.min.js"></script>
+	<link rel="stylesheet" href="resources/mediajs/mediaelementplayer.min.css" />
+</head> 
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>MSI Radio App</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+	<ul data-role="listview" data-inset="true" data-filter="true">
+		<li><a href="Channel.html?sname=peaceTV&stream=http://ib3.islambox.tv:8035" data-transition="pop">peace tv</a></li>
+		<li><a href="Channel.html?sname=hudatv&stream=http://ib3.islambox.tv:8030" data-transition="pop">huda tv</a></li>
+		<li><a href="Channel.html?sname=almajad hq&stream=http://ib3.islambox.tv:8025" data-transition="pop">almajad hq</a></li>
+		<li><a href="Channel.html?sname=duyna tv&stream=http://yahoo.com" data-transition="pop">duyna tv</a></li>
+		<li><a href="#Channel.html?sname=al-jazeera&stream=http://yahoo.com" data-transition="pop">al jazeera</a></li>
+	</ul>	
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+</body>
+</html>
